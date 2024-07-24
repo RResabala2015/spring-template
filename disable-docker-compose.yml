@@ -1,0 +1,32 @@
+services:
+  stores-app:
+    image: openjdk:17-jdk-slim
+    container_name: stores-app
+    working_dir: /app
+    volumes:
+      - .:/app
+      - ~/.m2:/root/.m2
+    ports:
+      - "8080:8080"
+    command: ["./mvnw", "spring-boot:run"]
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/stores_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+
+  db:
+    image: mysql:8.0
+    container_name: stores-db
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: stores_db
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
