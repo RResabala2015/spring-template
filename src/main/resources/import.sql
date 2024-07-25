@@ -1,0 +1,10 @@
+INSERT INTO productos (nombre, stock, fecha_vencimiento, costo_compra, costo_venta) VALUES ('Producto 1', 100, '2024-12-31', 10.50, 15.00);
+INSERT INTO productos (nombre, stock, fecha_vencimiento, costo_compra, costo_venta) VALUES ('Producto 2', 50, '2024-11-30', 5.00, 8.00);
+INSERT INTO productos (nombre, stock, fecha_vencimiento, costo_compra, costo_venta) VALUES ('Producto 3', 200, '2025-01-15', 20.00, 25.00);
+INSERT INTO productos (nombre, stock, fecha_vencimiento, costo_compra, costo_venta) VALUES ('Producto 4', 150, '2024-10-20', 7.50, 12.00);
+INSERT INTO productos (nombre, stock, fecha_vencimiento, costo_compra, costo_venta) VALUES ('Producto 5', 75, '2024-09-25', 30.00, 40.00);
+INSERT INTO productos (nombre, stock, fecha_vencimiento, costo_compra, costo_venta) VALUES ('Producto 6', 60, '2025-02-28', 12.00, 18.00);
+INSERT INTO productos (nombre, stock, fecha_vencimiento, costo_compra, costo_venta) VALUES ('Producto 7', 90, '2024-08-10', 8.50, 13.00);
+INSERT INTO productos (nombre, stock, fecha_vencimiento, costo_compra, costo_venta) VALUES ('Producto 8', 120, '2025-03-31', 15.00, 22.00);
+INSERT INTO productos (nombre, stock, fecha_vencimiento, costo_compra, costo_venta) VALUES ('Producto 9', 180, '2024-07-15', 5.50, 10.00);
+INSERT INTO productos (nombre, stock, fecha_vencimiento, costo_compra, costo_venta) VALUES ('Producto 10', 200, '2024-11-05', 3.00, 5.00);
